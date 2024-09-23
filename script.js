@@ -37,20 +37,15 @@ document.querySelector("#history-display").addEventListener('click',function(e) 
 document.querySelector("#noakhali-submit").addEventListener('click',function(e) {
     e.preventDefault()
     addDonation(".card-noakhali")
-    displayHistory(".card-noakhali")
-    document.querySelector(`.card-noakhali .input`).value = ""
+    
 })
 //Event listerner for feni donation
 document.querySelector("#feni-submit").addEventListener('click',function(e) {
     e.preventDefault()
     addDonation(".card-feni")
-    displayHistory(".card-feni")
-    document.querySelector(`.card-feni .input`).value = ""
 })
 //Event listerner for quota movement
 document.querySelector("#quota-submit").addEventListener('click',function(e) {
     e.preventDefault()
     addDonation(".card-quota")
-    displayHistory(".card-quota")
-    document.querySelector(`.card-quota .input`).value = ""
 })

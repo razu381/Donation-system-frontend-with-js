@@ -8,6 +8,8 @@ function addDonation(cardId){
         document.querySelector(`header .total-money-field #total-amount`).innerText = total_balance
         //show the success modal
         document.querySelector("#donation_success_modal").showModal()
+        displayHistory(cardId)
+        document.querySelector(`${cardId} .input`).value = ""
 
     }else{
         document.querySelector("#donation_fail_modal").showModal()
