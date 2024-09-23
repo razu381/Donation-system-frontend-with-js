@@ -20,9 +20,7 @@ function addDonation(cardId){
 
 
 function displayHistory(cardId){
-    console.log("Displaying history")
     let amount = parseFloat(document.querySelector(`${cardId} .input`).value)
-    console.log(`amount is ${amount}`) 
     let title = document.querySelector(`${cardId} .donation-title`).innerText
 
     const currentDate = new Date();
