@@ -11,6 +11,7 @@ function addDonation(cardId){
 
     }else{
         document.querySelector("#donation_fail_modal").showModal()
+        return
     }
     
 }
