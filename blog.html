@@ -67,7 +67,7 @@
               </div>
             </div>
           </div>
-          <div class="navbar-end items-center">
+          <div class="lg:navbar-end items-center">
             <a
               href="index.html"
               class="btn bg-green text-xl mt-4 mr-3 lg:hidden"
@@ -88,7 +88,7 @@
       </div>
     </header>
 
-    <main class="donate-container">
+    <main class="donate-container mb-24">
       <h2 class="flex font-bold text-2xl lg:text-5xl mt-8">
         Important FAQ
         <svg
@@ -110,93 +110,68 @@
       <div class="collapse collapse-arrow border mt-10">
         <input type="radio" name="my-accordion-2" checked="checked" />
         <div class="collapse-title text-xl font-medium">
-          How do I make a donation on the website?
+          What is the Document Object Model (DOM)?
         </div>
         <div class="collapse-content">
           <p class="font-light text-base">
-            To make a donation, simply navigate to the "Donate" page on our
-            website. Select the cause or program you'd like to support, choose
-            your donation amount, and fill in your personal details. We offer
-            several payment options, including credit/debit cards, PayPal, and
-            bank transfers. Once your payment is processed, you will receive an
-            email confirmation and a receipt for your records. If you encounter
-            any issues during the donation process, feel free to reach out to
-            our support team for assistance.
+            The Document Object Model (DOM) is a programming interface for HTML
+            and XML documents. It represents the structure of a document as a
+            tree of nodes, allowing developers to dynamically access and modify
+            the content, structure, and style of a document.
           </p>
         </div>
       </div>
       <div class="collapse collapse-arrow border">
         <input type="radio" name="my-accordion-2" />
         <div class="collapse-title text-xl font-medium">
-          Is my donation tax-deductible?
+          How do you select an element from the DOM?
         </div>
         <div class="collapse-content">
           <p class="font-light text-base">
-            Yes, in most cases, your donation may be tax-deductible. We are a
-            registered [501(c)(3)] nonprofit organization (or relevant legal
-            status in your country), meaning that donations are typically
-            eligible for tax deductions. After completing your donation, you
-            will receive a confirmation email that includes a receipt. This
-            receipt can be used when filing your taxes to claim the deduction.
-            For more detailed information, we recommend consulting with your tax
-            advisor to confirm how the deduction applies based on your location
-            and donation amount.
+            ou can select an element from the DOM using various methods, such
+            as: <br />
+            document.getElementById('id') to select an element by its ID <br />
+            document.querySelector('selector') to select an element using a CSS
+            selector <br />
+            document.querySelectorAll('selector') to select multiple elements
+            using a CSS selector
           </p>
         </div>
       </div>
       <div class="collapse collapse-arrow border">
         <input type="radio" name="my-accordion-2" />
         <div class="collapse-title text-xl font-medium">
-          Can I donate anonymously?
+          What is event delegation in the context of the DOM, and why is it
+          useful?
         </div>
         <div class="collapse-content">
           <p class="font-light text-base">
-            Absolutely! We understand that some donors prefer to remain
-            anonymous. During the donation process, you will have the option to
-            select "Donate Anonymously." This means your name and personal
-            information will not be displayed publicly or shared with third
-            parties. However, even if you donate anonymously, you will still
-            receive a confirmation email and tax receipt for your donation (if
-            applicable). Rest assured, we take your privacy very seriously and
-            ensure all personal information is handled securely.
+            Event delegation is a technique where you attach an event listener
+            to a parent element, rather than individual child elements. This
+            allows you to capture events bubbled up from child elements,
+            reducing the number of event listeners needed and improving
+            performance. It's useful for handling events on dynamically
+            generated content or when working with a large number of elements.
           </p>
         </div>
       </div>
       <div class="collapse collapse-arrow border">
         <input type="radio" name="my-accordion-2" />
         <div class="collapse-title text-xl font-medium">
-          How is my donation used?
+          How do you manipulate an element's attributes and styles using the
+          DOM?
         </div>
         <div class="collapse-content">
           <p class="font-light text-base">
-            We believe in full transparency and want you to know exactly how
-            your donation is making a difference. Depending on the cause or
-            program you choose to support, your donation may go towards funding
-            specific projects, such as providing clean water, education, or
-            emergency relief. We allocate funds based on the most pressing
-            needs, ensuring that your donation has the greatest possible impact.
-            You can also check our annual reports and financial statements on
-            our website, which detail how funds are distributed and used to
-            achieve our mission.
-          </p>
-        </div>
-      </div>
-      <div class="collapse collapse-arrow border">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">
-          Can I set up a recurring donation?
-        </div>
-        <div class="collapse-content">
-          <p class="font-light text-base">
-            Yes, you can! Setting up a recurring donation allows you to support
-            our cause on an ongoing basis without needing to manually donate
-            each time. When making a donation, simply select the "Recurring
-            Donation" option and choose the frequency (monthly, quarterly,
-            yearly) that works best for you. Recurring donations provide us with
-            a steady stream of support, helping us plan and sustain long-term
-            projects. You can adjust or cancel your recurring donation at any
-            time by logging into your account or contacting our donor support
-            team.
+            You can manipulate an element's attributes and styles using the DOM
+            by:
+            <br />
+            Setting attributes using element.setAttribute('attribute', 'value')
+            <br />
+            Getting attributes using element.getAttribute('attribute') <br />
+            Setting styles using element.style.property = 'value' <br />
+            Getting styles using element.style.property <br />
+            Using element.classList to add, remove, or toggle CSS classes
           </p>
         </div>
       </div>

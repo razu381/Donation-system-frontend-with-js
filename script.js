@@ -1,5 +1,7 @@
 let total_balance = 5500
 let  amount_noakhali = 0.00;
+let  amount_feni = 0.00;
+let  amount_quota = 0.00;
 
 //Toggle button for donation and history section
 document.querySelector(".history-container").classList.add('hidden')
@@ -36,16 +38,16 @@ document.querySelector("#history-display").addEventListener('click',function(e) 
 //Event listerner for Noakhali donation
 document.querySelector("#noakhali-submit").addEventListener('click',function(e) {
     e.preventDefault()
-    addDonation(".card-noakhali")
+    addDonation("card-noakhali")
     
 })
 //Event listerner for feni donation
 document.querySelector("#feni-submit").addEventListener('click',function(e) {
     e.preventDefault()
-    addDonation(".card-feni")
+    addDonation("card-feni")
 })
 //Event listerner for quota movement
 document.querySelector("#quota-submit").addEventListener('click',function(e) {
     e.preventDefault()
-    addDonation(".card-quota")
+    addDonation("card-quota")
 })

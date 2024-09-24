@@ -1,15 +1,27 @@
 function addDonation(cardId){
-    let amount = parseFloat(document.querySelector(`${cardId} .input`).value) 
+    console.log(cardId)
+    let amount = parseFloat(document.querySelector(`.${cardId} .input`).value) 
     if(amount > 0 && !isNaN(amount) && amount <= total_balance){
-        amount_noakhali += amount;
-        document.querySelector(`${cardId} .local-money-field #amount`).innerText = amount_noakhali
+        console.log(cardId)
+        if(cardId == "card-noakhali"){
+            amount_noakhali += amount;
+            document.querySelector(`.${cardId} .local-money-field #amount`).innerText = amount_noakhali
+        }else if(cardId == "card-feni"){
+            amount_feni += amount;
+            document.querySelector(`.${cardId} .local-money-field #amount`).innerText = amount_feni
+        }else{
+            amount_quota += amount;
+            document.querySelector(`.${cardId} .local-money-field #amount`).innerText = amount_quota
+        }
+        
+        
 
         total_balance -= amount;
         document.querySelector(`header .total-money-field #total-amount`).innerText = total_balance
         //show the success modal
         document.querySelector("#donation_success_modal").showModal()
         displayHistory(cardId)
-        document.querySelector(`${cardId} .input`).value = ""
+        document.querySelector(`.${cardId} .input`).value = ""
 
     }else{
         document.querySelector("#donation_fail_modal").showModal()
@@ -20,8 +32,8 @@ function addDonation(cardId){
 
 
 function displayHistory(cardId){
-    let amount = parseFloat(document.querySelector(`${cardId} .input`).value)
-    let title = document.querySelector(`${cardId} .donation-title`).innerText
+    let amount = parseFloat(document.querySelector(`.${cardId} .input`).value)
+    let title = document.querySelector(`.${cardId} .donation-title`).innerText
 
     const currentDate = new Date();
     const bdFormat = currentDate.toLocaleString('en-US', {
