@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignemnt 05</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              green: "#B4F461",
+              offwhite: "#F9F7F3",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .donate-lexend {
+        font-family: "Lexend", sans-serif;
+        font-optical-sizing: none;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 20px;
+      }
+      .donate-container {
+        max-width: 1140px;
+        margin: 0 auto;
+      }
+      @media only screen and (max-width: 768px) {
+        .donate-container {
+          width: 100%;
+          padding: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body class="donate-lexend">
+    <header class="sticky top-0 z-10">
+      <div class="bg-[#F9F7F3] py-6">
+        <div
+          class="donate-container navbar justify-start items-center flex-col lg:flex-row"
+        >
+          <div class="navbar-start hidden lg:block">
+            <a href="index.html" class="btn bg-green text-xl">Home</a>
+          </div>
+          <div class="navbar-center flex">
+            <div class="card card-side items-center">
+              <figure>
+                <img src="assets/logo.png" class="" />
+              </figure>
+              <div class="card-body p-0 pl-2">
+                <h2 class="card-title">Donate Bangladesh</h2>
+              </div>
+            </div>
+          </div>
+          <div class="navbar-end items-center">
+            <a
+              href="index.html"
+              class="btn bg-green text-xl mt-4 mr-3 lg:hidden"
+              >Home</a
+            >
+            <div class="card card-side align-middle mt-5 lg:mt-0">
+              <figure>
+                <img src="assets/coin.png" class="w-5 lg:w-auto" />
+              </figure>
+              <div class="card-body p-0 pl-2">
+                <h2 class="card-title total-money-field font-medium">
+                  <span id="total-amount">5500</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="donate-container">
+      <h2 class="flex font-bold text-2xl lg:text-5xl mt-8">
+        Important FAQ
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-8 lg:size-14"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"
+          />
+        </svg>
+      </h2>
+
+      <div class="collapse collapse-arrow border mt-10">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          How do I make a donation on the website?
+        </div>
+        <div class="collapse-content">
+          <p class="font-light text-base">
+            To make a donation, simply navigate to the "Donate" page on our
+            website. Select the cause or program you'd like to support, choose
+            your donation amount, and fill in your personal details. We offer
+            several payment options, including credit/debit cards, PayPal, and
+            bank transfers. Once your payment is processed, you will receive an
+            email confirmation and a receipt for your records. If you encounter
+            any issues during the donation process, feel free to reach out to
+            our support team for assistance.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow border">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          Is my donation tax-deductible?
+        </div>
+        <div class="collapse-content">
+          <p class="font-light text-base">
+            Yes, in most cases, your donation may be tax-deductible. We are a
+            registered [501(c)(3)] nonprofit organization (or relevant legal
+            status in your country), meaning that donations are typically
+            eligible for tax deductions. After completing your donation, you
+            will receive a confirmation email that includes a receipt. This
+            receipt can be used when filing your taxes to claim the deduction.
+            For more detailed information, we recommend consulting with your tax
+            advisor to confirm how the deduction applies based on your location
+            and donation amount.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow border">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          Can I donate anonymously?
+        </div>
+        <div class="collapse-content">
+          <p class="font-light text-base">
+            Absolutely! We understand that some donors prefer to remain
+            anonymous. During the donation process, you will have the option to
+            select "Donate Anonymously." This means your name and personal
+            information will not be displayed publicly or shared with third
+            parties. However, even if you donate anonymously, you will still
+            receive a confirmation email and tax receipt for your donation (if
+            applicable). Rest assured, we take your privacy very seriously and
+            ensure all personal information is handled securely.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow border">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          How is my donation used?
+        </div>
+        <div class="collapse-content">
+          <p class="font-light text-base">
+            We believe in full transparency and want you to know exactly how
+            your donation is making a difference. Depending on the cause or
+            program you choose to support, your donation may go towards funding
+            specific projects, such as providing clean water, education, or
+            emergency relief. We allocate funds based on the most pressing
+            needs, ensuring that your donation has the greatest possible impact.
+            You can also check our annual reports and financial statements on
+            our website, which detail how funds are distributed and used to
+            achieve our mission.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow border">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          Can I set up a recurring donation?
+        </div>
+        <div class="collapse-content">
+          <p class="font-light text-base">
+            Yes, you can! Setting up a recurring donation allows you to support
+            our cause on an ongoing basis without needing to manually donate
+            each time. When making a donation, simply select the "Recurring
+            Donation" option and choose the frequency (monthly, quarterly,
+            yearly) that works best for you. Recurring donations provide us with
+            a steady stream of support, helping us plan and sustain long-term
+            projects. You can adjust or cancel your recurring donation at any
+            time by logging into your account or contacting our donor support
+            team.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
